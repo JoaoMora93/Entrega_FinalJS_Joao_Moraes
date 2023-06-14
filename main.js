@@ -27,5 +27,9 @@ productos.forEach((product) => {
 
     contenidoTienda.append(content);
 
+    let comprar = document.createElement("button");
+    comprar.innerText = "comprar";
+
+    content.append(comprar);
 });
 
