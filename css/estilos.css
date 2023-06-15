@@ -139,7 +139,7 @@ section article p {
 }
 
 /* clase para el contenido de la tienda */
-.contenido-tienda .col-lg-4{
+.contenido-tienda {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -165,7 +165,7 @@ section article p {
     border: 5px solid rgba(166, 141, 218, 0.8);
   }
 
-  .contenido-tienda p {
+  .precio {
     margin: 0%;
     background-color: rgba(165, 141, 218, 0.918);
     color: #03091f;
