@@ -18,11 +18,9 @@ productos.forEach((product) => {
     let content = document.createElement("div");
     content.className = "carta";
     content.innerHTML = `
-            <div class="col-lg-4 col-md-6 col-sm-12">
                 <img class="img-borde" src="${product.img}">
                 <h3>${product.nombre}</h3>
                 <p class="precio">${product.precio} $</p>
-            </div>
         
     `;
 

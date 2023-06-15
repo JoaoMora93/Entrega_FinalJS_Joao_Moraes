@@ -47,13 +47,13 @@ h2 {
 }
 
 h3 {
-  margin:1px;
-  padding-left: 5px;
-  padding-bottom: 5px;
+  margin: 0px;
+  /* padding-left: 5px;
+  padding-bottom: 5px; */
   color: #03091f;
   background-color: rgba(165, 141, 218, 0.948);
-  border-radius: 2px;
-  border: 2px solid whitesmoke;
+  /* border-radius: 2px;
+  border: 2px solid whitesmoke; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -117,7 +117,7 @@ section article p {
 
 /*estilo main*/
 #estilo-main {
-  width: 100%;
+  /* width: 100%; */
   background-image: linear-gradient(rgba(3, 9, 31, 0.982), rgba(166, 141, 218, 0.8)), url("../recursos/images/varios-productos.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -143,37 +143,41 @@ section article p {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 30px;
-  margin-left: 80px;
-  margin-right: 80px;
   }
   
   .carta {
-    box-shadow: 0 4px 8px 0 rgba(0 0 0 0.2);
-    max-width: 300px;
-    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    max-width: 250px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right:80px;
+    margin-bottom: 30px;
+    }
 
   .carta img {
-    width: 90%;
+    width: 250px;
     height: 250px;
   }
-  
-  .contenido-tienda img:hover {
-    border: 5px solid rgba(166, 141, 218, 0.8);
+
+  .carta img:hover {
+    opacity: 0.7;
   }
+  
+  /* .contenido-tienda img:hover {
+    border: 5px solid rgba(166, 141, 218, 0.8);
+  } */
 
   .precio {
     margin: 0%;
-    background-color: rgba(165, 141, 218, 0.918);
+    background-color: rgba(165, 141, 218, 0.948);
     color: #03091f;
-    font-size: 25px;
+    font-size: 22px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+    /* text-align: center;
     border-radius: 2px;
-    border: 2px solid whitesmoke;
+    border: 2px solid whitesmoke; */
   }
 
   .carta button {
