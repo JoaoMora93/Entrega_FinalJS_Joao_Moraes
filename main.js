@@ -16,6 +16,7 @@ let carrito = [];
 
 productos.forEach((product) => {
     let content = document.createElement("div");
+    content.className = "carta";
     content.innerHTML = `
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <img class="rounded img-borde" src="${product.img}">
@@ -29,6 +30,7 @@ productos.forEach((product) => {
 
     let comprar = document.createElement("button");
     comprar.innerText = "comprar";
+    comprar.className = "comprar";
 
     content.append(comprar);
 });
