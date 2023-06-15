@@ -47,12 +47,14 @@ h2 {
 }
 
 h3 {
+  margin:1px;
   padding-left: 5px;
   padding-bottom: 5px;
   color: #03091f;
   background-color: rgba(165, 141, 218, 0.948);
   border-radius: 2px;
   border: 2px solid whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h4 {
@@ -104,7 +106,13 @@ section article p {
 }
 
 #estilo-navbar a {
-  color: #571dd9;
+  color: white;
+}
+
+#estilo-navbar a:hover{
+  transition: 100ms;
+  transition: background-color .5s;
+  background-color: #571dd9;
 }
 
 /*estilo main*/
@@ -143,6 +151,17 @@ section article p {
   
   .contenido-tienda img:hover {
     border: 5px solid rgba(166, 141, 218, 0.8);
+  }
+
+  .contenido-tienda p {
+    margin: 0%;
+    background-color: rgba(165, 141, 218, 0.918);
+    color: #03091f;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-radius: 2px;
+    border: 2px solid whitesmoke;
   }
 
 /*Estilo formulario*/
