@@ -147,17 +147,17 @@ section article p {
   
   .carta {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
-    max-width: 250px;
+    max-width: 400px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 30px;
-    margin-left: 80px;
-    margin-right:80px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 30px;
     }
 
   .carta img {
-    width: 250px;
+    width: 400px;
     height: 250px;
   }
 
