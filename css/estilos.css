@@ -105,6 +105,12 @@ section article p {
   background-color: #03091f !important;
 }
 
+#estilo-navbar p {
+  text-align: left;
+  font-size: 25px;
+  margin-right: 50px;
+}
+
 #estilo-navbar a {
   color: white;
 }

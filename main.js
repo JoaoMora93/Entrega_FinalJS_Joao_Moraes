@@ -1,4 +1,6 @@
 const contenidoTienda = document.getElementById("contenidoTienda");
+const verCarrito = document.getElementById("ver-carrito");
+const modalContainer = document.getElementById("modal-container");
 
 let carrito = [];
 
@@ -31,3 +33,18 @@ productos.forEach((product) => {
     });
 });
 
+verCarrito.addEventListener("click", () => {
+    
+    const modalHeader = document.createElement("div");
+    modalHeader.className = "modal-header"
+    modalHeader.innerHTML = `
+        <h1 class="modal-header-title">Carrito</h1>
+    `;
+    modalContainer.append(modalHeader);
+    
+    const modalbutton = document.createElement("h1");
+    modalbutton.innerText ="x";
+    modalbutton.className = "modal-header-button";
+
+    modalHeader.append(modalbutton);
+})
