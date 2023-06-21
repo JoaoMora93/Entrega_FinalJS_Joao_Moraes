@@ -1,0 +1,60 @@
+const productos = [
+    {
+        id: 1, 
+        nombre: "Sahumador 1", 
+        precio: 240, img: "../recursos/images/Sahumaerios.jpeg",
+        cantidad: 1,
+    },
+    {
+        id: 2, 
+        nombre: "Sahumador 2", precio: 250, img: "../recursos/images/saumador-con-cuenco.jpeg"},
+    {
+        id: 3, 
+        nombre: "Sahumador 3", 
+        precio: 265, 
+        img: "../recursos/images/varios-productos-2.jpeg",
+        cantidad: 1,
+    },
+    {
+        id: 4, 
+        nombre: "Mix 1", 
+        precio: 140, 
+        img: "../recursos/images/mix-con-adorno-hilos-con-alma.jpeg",
+        cantidad: 1,
+    },
+    {
+        id: 5, 
+        nombre: "Mix 2", 
+        precio: 150, 
+        img: "../recursos/images/mix-con-carbón-horizontal.jpeg",
+        cantidad: 1,
+    },
+    {
+        id: 6, 
+        nombre: "Mix 3", 
+        precio: 180, 
+        img: "../recursos/images/mix-de-hierbas.jpeg",
+        cantidad: 1,
+    },
+    {
+        id: 7, 
+        nombre: "Combo 1", 
+        precio: 500, 
+        img: "../recursos/images/caja-presentación.jpeg",
+        cantidad: 1,
+    },
+    {
+        id: 8, 
+        nombre: "Combo 2", 
+        precio: 450, 
+        img: "../recursos/images/producto-1.jpeg",
+        cantidad: 1,
+    },
+    {
+        id: 9,
+        nombre: "Combo 3", 
+        precio: 550, 
+        img: "../recursos/images/producto-2.jpeg",
+        cantidad: 1,
+    },
+];

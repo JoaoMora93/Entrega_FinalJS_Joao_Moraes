@@ -262,6 +262,16 @@ section article p {
   padding-top: 20px;
 }
 
+/* estilo carrito */
+.verCarrito {
+  cursor: pointer !important;
+}
+
+/* botón de eliminar */
+.borrar-producto {
+  cursor: pointer;
+}
+
 /*Estilo formulario*/
 #estilo-formulario{
     margin-left: 5px;
