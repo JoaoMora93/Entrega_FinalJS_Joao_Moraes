@@ -272,6 +272,29 @@ section article p {
   cursor: pointer;
 }
 
+/* Estilo del div del globo carrito */
+/* .globoCarrito {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-items: start;
+} */
+
+/* Globo de cantidad de carrito */
+.cantidad-carrito {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 4px;
+  top: 60px;
+  left: 620px;
+  position: absolute;
+  display: none;
+  border-radius: 15px;
+}
+
+/*  */
+
 /*Estilo formulario*/
 #estilo-formulario{
     margin-left: 5px;

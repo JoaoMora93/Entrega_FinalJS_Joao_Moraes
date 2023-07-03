@@ -25,6 +25,8 @@ const mostrarCarrito = () => {
         <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p>${product.precio} $</p>
+        <p>Cantidad: ${product.cantidad}</p>
+        <p>Subtotal: ${product.cantidad * product.precio}</p>
         `;
 
         modalContainer.append(contenidoDelCarrito)
@@ -39,7 +41,7 @@ const mostrarCarrito = () => {
 
 
 
-    const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+    const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
 
     const totalComprado = document.createElement("div")
     totalComprado.className = "contenido-total"
@@ -55,6 +57,11 @@ const eliminarProducto = () => {
     carrito = carrito.filter((carritoId) => {
         return carritoId !== foundId;
     });
-
+    contadorCarrito();
     mostrarCarrito();
 };
+
+const contadorCarrito = () => {
+    cantidadCarrito.style.display = "block";
+    cantidadCarrito.innerText = carrito.length;
+}

@@ -7,7 +7,11 @@ const productos = [
     },
     {
         id: 2, 
-        nombre: "Sahumador 2", precio: 250, img: "../recursos/images/saumador-con-cuenco.jpeg"},
+        nombre: "Sahumador 2", 
+        precio: 250, 
+        img: "../recursos/images/saumador-con-cuenco.jpeg",
+        cantidad: 1,
+    },
     {
         id: 3, 
         nombre: "Sahumador 3", 
