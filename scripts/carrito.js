@@ -58,6 +58,7 @@ const eliminarProducto = () => {
         return carritoId !== foundId;
     });
     contadorCarrito();
+    guardarLocal();
     mostrarCarrito();
 };
 
