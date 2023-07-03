@@ -5,7 +5,11 @@ const cantidadCarrito = document.getElementById("cantidadCarrito")
 
 let carrito = JSON.parse(localStorage.getItem("producto")) || [];
 
-productos.forEach((product) => {
+const getProductos = async () => {
+    const respuesta = await fetch("../datos/data.json")
+    const datos = await respuesta.json();
+
+    datos.forEach((product) => {
     let content = document.createElement("div");
     content.className = "carta";
     content.innerHTML = `
@@ -23,7 +27,7 @@ productos.forEach((product) => {
 
     content.append(comprar);
 
-    comprar.addEventListener("click", () =>{
+    comprar.addEventListener("click", () => {
         
         const repetido = carrito.some((repetidoProduct) => repetidoProduct.id === product.id);
                     
@@ -47,6 +51,12 @@ productos.forEach((product) => {
         guardarLocal();
     });
 });
+
+};
+
+getProductos();
+
+
 
 // set
 const guardarLocal = () => {
