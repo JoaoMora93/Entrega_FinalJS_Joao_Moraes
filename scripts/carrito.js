@@ -25,21 +25,55 @@ const mostrarCarrito = () => {
         <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p>${product.precio} $</p>
+        <span class="restar"> - </span>
         <p>Cantidad: ${product.cantidad}</p>
+        <span class="sumar"> + </span>
         <p>Subtotal: ${product.cantidad * product.precio}</p>
+        <span class="borrar-producto">❌</span>
         `;
 
-        modalContainer.append(contenidoDelCarrito)
+        modalContainer.append(contenidoDelCarrito);
 
-        let eliminar = document.createElement("span");
-        eliminar.innerText = "❌";
-        eliminar.className = "borrar-producto";
-        contenidoDelCarrito.append(eliminar);
+// restar y sumar cantidades en el carrito
 
-        eliminar.addEventListener("click", eliminarProducto);
+        let restar = contenidoDelCarrito.querySelector(".restar");
+
+        restar.addEventListener("click", () => {
+            if(product.cantidad !== 1) {
+                product.cantidad--;
+            }
+            guardarLocal();
+            mostrarCarrito();
+        });
+
+        let sumar = contenidoDelCarrito.querySelector(".sumar");
+        sumar.addEventListener("click", () => {
+            product.cantidad++;
+            guardarLocal();
+            mostrarCarrito();
+        });
+
+// Fin restar y sumar
+
+// Eliminar producto del carrito
+
+        let eliminar = contenidoDelCarrito.querySelector(".borrar-producto");
+
+        eliminar.addEventListener("click", () => {
+            eliminarProducto(product.id);
+        });
+
+        // let eliminar = document.createElement("span");
+        // eliminar.innerText = "❌";
+        // eliminar.className = "borrar-producto";
+        // contenidoDelCarrito.append(eliminar);
+
+        // eliminar.addEventListener("click", eliminarProducto);
     });
 
+// Fin eliminar producto del carrito
 
+// Total y sub total a pagar en el carrito
 
     const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
 
@@ -49,10 +83,14 @@ const mostrarCarrito = () => {
     modalContainer.append(totalComprado);
 };
 
+// Fin total subtotal
+
 verCarrito.addEventListener("click", mostrarCarrito);
 
-const eliminarProducto = () => {
-    const foundId = carrito.find((element) => element.id);
+const eliminarProducto = (id) => {
+    const foundId = carrito.find((element) => element.id === id);
+
+    console.log(foundId);
 
     carrito = carrito.filter((carritoId) => {
         return carritoId !== foundId;
@@ -65,4 +103,4 @@ const eliminarProducto = () => {
 const contadorCarrito = () => {
     cantidadCarrito.style.display = "block";
     cantidadCarrito.innerText = carrito.length;
-}
+};

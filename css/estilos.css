@@ -280,6 +280,16 @@ section article p {
   justify-items: start;
 } */
 
+/* Restar producto */
+.restar {
+  cursor: pointer;
+}
+
+/* Sunar producto */
+.sumar {
+  cursor: pointer;
+}
+
 /* Globo de cantidad de carrito */
 .cantidad-carrito {
   background-color: red;
